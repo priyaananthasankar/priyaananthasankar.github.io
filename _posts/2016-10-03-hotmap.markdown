@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Heatmap Visualization"
+date:   2016-Oct-3 19:59:43 +0530
+categories: jekyll update
+author: "Priya Ananthasankar"
+---
+
+Angular directive to model a widget which can visualize a heat map. Similar to the widget shown by GitHub for commit history.
