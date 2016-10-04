@@ -12,4 +12,8 @@ permalink: /about/
 And hey, learning never stops right? I came back to academia to reboot my skills in the field of Natural Language processing, Artificial Intelligence and the Semantic Web.
 <br><br>
 I am passionate about solving engineering problems and I am a die hard connoiseur of comics and graphic novels. For my comic blog please follow: <a href="http://comicartcafe.quora.com">Comic Art Cafe</a>
+<br><br>
+Linked In: <a href="https://www.linkedin.com/in/priyaananthasankar">My career so far...</a>
+<br>
+GitHub: <a href="https://github.com/priyaananthasankar">Octocat..</a>
 </div>

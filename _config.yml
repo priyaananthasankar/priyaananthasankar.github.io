@@ -15,7 +15,7 @@ description: "<h3>Hello, world!</h3><h1>Technical Travails</h1><h3>My tinkering 
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hemangsk.github.io" # the base hostname & protocol for your site
+url: "http://priyaananthasankar.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 

@@ -3,19 +3,47 @@
   <channel>
     <title>Priya Ananthasankar</title>
     <description>&lt;h3&gt;Hello, world!&lt;/h3&gt;&lt;h1&gt;Technical Travails&lt;/h1&gt;&lt;h3&gt;My tinkering workshop&lt;/h3&gt;Hope you like it!</description>
-    <link>http://hemangsk.github.io/</link>
-    <atom:link href="http://hemangsk.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Oct 2016 20:05:31 -0700</pubDate>
-    <lastBuildDate>Mon, 03 Oct 2016 20:05:31 -0700</lastBuildDate>
+    <link>http://priyaananthasankar.github.io/</link>
+    <atom:link href="http://priyaananthasankar.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Oct 2016 11:11:59 -0700</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 11:11:59 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Heatmap Visualization</title>
-        <description>&lt;p&gt;Angular directive to model a widget which can visualize a heat map. Similar to the widget shown by GitHub for commit history.&lt;/p&gt;
+        <description>&lt;p&gt;Angular directive to model a widget which can visualize a heat map. Similar to the widget shown by GitHub for commit history.
+Code @: &lt;a href=&quot;https://github.com/priyaananthasankar/hotmap&quot;&gt;Heatmap&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 Oct 2016 07:29:43 -0700</pubDate>
-        <link>http://hemangsk.github.io/jekyll/update/2016/10/03/hotmap.html</link>
-        <guid isPermaLink="true">http://hemangsk.github.io/jekyll/update/2016/10/03/hotmap.html</guid>
+        <link>http://priyaananthasankar.github.io/jekyll/update/2016/10/03/hotmap.html</link>
+        <guid isPermaLink="true">http://priyaananthasankar.github.io/jekyll/update/2016/10/03/hotmap.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Notable problems in cracking the code interview with C++</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;kth to last item in linked list&lt;/li&gt;
+  &lt;li&gt;Delete a middle node&lt;/li&gt;
+  &lt;li&gt;Given a string stored as a single linked list, determine if the string is a palindrome or not&lt;/li&gt;
+  &lt;li&gt;Identify if a linked list is circular&lt;/li&gt;
+  &lt;li&gt;Given 2 linked lists, where numbers are stored in reverse order, add the lists.&lt;/li&gt;
+  &lt;li&gt;Remove duplicates in unsorted linked list&lt;/li&gt;
+  &lt;li&gt;Given a stack implemented as a linked list write push/pop in O(1) time&lt;/li&gt;
+  &lt;li&gt;Plate of stacks implementation. Abstract a push pop operation of stack within stack.&lt;/li&gt;
+  &lt;li&gt;Towers of Hanoi Recursion
+&lt;br /&gt;
+Code @: &lt;a href=&quot;https://github.com/priyaananthasankar/python-ctci&quot;&gt;Notables&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 03 Oct 2016 07:29:43 -0700</pubDate>
+        <link>http://priyaananthasankar.github.io/jekyll/update/2016/10/03/ctci-c++.html</link>
+        <guid isPermaLink="true">http://priyaananthasankar.github.io/jekyll/update/2016/10/03/ctci-c++.html</guid>
         
         
         <category>jekyll</category>
