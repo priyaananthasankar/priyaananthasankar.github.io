@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Notable problems in cracking the code interview with C++"
+date:   2016-Oct-3 19:59:43 +0530
+categories: jekyll update
+author: "Priya Ananthasankar"
+---
+1. kth to last item in linked list
+2. Delete a middle node
+3. Given a string stored as a single linked list, determine if the string is a palindrome or not
+4. Identify if a linked list is circular
+5. Given 2 linked lists, where numbers are stored in reverse order, add the lists.
+6. Remove duplicates in unsorted linked list
+7. Given a stack implemented as a linked list write push/pop in O(1) time
+8. Plate of stacks implementation. Abstract a push pop operation of stack within stack.
+9. Towers of Hanoi Recursion
+Code @: [Notables](https://github.com/priyaananthasankar/python-ctci)
