@@ -14,5 +14,6 @@ author: "Priya Ananthasankar"
 7. Given a stack implemented as a linked list write push/pop in O(1) time
 8. Plate of stacks implementation. Abstract a push pop operation of stack within stack.
 9. Towers of Hanoi Recursion
+10. Queue implementation using two stacks
 <br>
 Code @: [Notables](https://github.com/priyaananthasankar/python-ctci)
