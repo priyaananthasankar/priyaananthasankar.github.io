@@ -1,0 +1,76 @@
+---
+layout: page
+title: What am I reading 
+permalink: /reading/
+---
+<div class="man-title">
+ Priya Ananthasankar 
+</div>
+<p>  <div class="manual-content">
+      <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+      <style type="text/css" media="screen">
+  .gr_custom_container_1475604341 {
+    /* customize your Goodreads widget container here*/
+    border: 1px solid gray;
+    border-radius:10px;
+    padding: 10px 5px 10px 5px;
+    background-color: transparent;
+    color: #000000;
+    
+  }
+  .gr_custom_header_1475604341 {
+    /* customize your Goodreads header here*/
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 150%
+  }
+  .gr_custom_each_container_1475604341 {
+    /* customize each individual book container here */
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #aaa;
+  }
+  .gr_custom_book_container_1475604341 {
+    /* customize your book covers here */
+    overflow: hidden;
+    height: 160px;
+      text-align: center;
+      width: 100%;
+  }
+  .gr_custom_author_1475604341 {
+    /* customize your author names here */
+    font-size: 10px;
+  }
+  .gr_custom_tags_1475604341 {
+    /* customize your tags here */
+    font-size: 10px;
+    color: gray;
+  }
+  .gr_custom_rating_1475604341 {
+    /* customize your rating stars here */
+    float: right;
+  }
+</style>
+
+      <div id="gr_custom_widget_1475604341">
+          <div class="gr_custom_container_1475604341">
+    <h2 class="gr_custom_header_1475604341">
+    <a style="text-decoration: none;" href="https://www.goodreads.com/review/list/3541484-priya?shelf=currently-reading&amp;utm_medium=api&amp;utm_source=custom_widget">Priya&#39;s bookshelf: currently-reading</a>
+    </h2>
+  <br style="clear: both"/>
+  <center>
+    <a href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
+  </center>
+  <noscript>
+    Share <a href="https://www.goodreads.com/">book reviews</a> and ratings with Priya, and even join a <a href="https://www.goodreads.com/group">book club</a> on Goodreads.
+  </noscript>
+  </div>
+
+      </div>
+      <script src="https://www.goodreads.com/review/custom_widget/3541484.Priya's%20bookshelf:%20currently-reading?cover_position=middle&cover_size=medium&num_books=2&order=a&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=1&widget_id=1475604341&widget_text_color=000000&widget_title_size=large&widget_width=full" type="text/javascript" charset="utf-8"></script>
+</div>
