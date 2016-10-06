@@ -5,8 +5,8 @@
     <description>&lt;h3&gt;Hello, world!&lt;/h3&gt;&lt;h1&gt;techTravails&lt;/h1&gt;</description>
     <link>http://priyaananthasankar.github.io/</link>
     <atom:link href="http://priyaananthasankar.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Oct 2016 11:57:16 -0700</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 11:57:16 -0700</lastBuildDate>
+    <pubDate>Thu, 06 Oct 2016 15:00:38 -0700</pubDate>
+    <lastBuildDate>Thu, 06 Oct 2016 15:00:38 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -83,7 +83,8 @@ Code @: &lt;a href=&quot;https://github.com/priyaananthasankar/hotmap&quot;&gt;H
   &lt;li&gt;Remove duplicates in unsorted linked list&lt;/li&gt;
   &lt;li&gt;Given a stack implemented as a linked list write push/pop in O(1) time&lt;/li&gt;
   &lt;li&gt;Plate of stacks implementation. Abstract a push pop operation of stack within stack.&lt;/li&gt;
-  &lt;li&gt;Towers of Hanoi Recursion
+  &lt;li&gt;Towers of Hanoi Recursion&lt;/li&gt;
+  &lt;li&gt;Queue implementation using two stacks
 &lt;br /&gt;
 Code @: &lt;a href=&quot;https://github.com/priyaananthasankar/python-ctci&quot;&gt;Notables&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
