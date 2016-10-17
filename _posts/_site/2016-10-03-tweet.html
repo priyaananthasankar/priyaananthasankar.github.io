@@ -1,0 +1,33 @@
+<p>Grab tweets with a specific hashtag this way:</p>
+
+<ol>
+  <li>Install tweepy - pip install tweepy</li>
+  <li>Generate OAuth tokens for accessing Twitter API: <a href="https://dev.twitter.com/oauth">OAuth</a></li>
+  <li>Execute the following code in a python file. Substitute as required.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> 
+
+<span class="n">import</span> <span class="n">tweepy</span>
+<span class="n">import</span> <span class="n">json</span>
+<span class="n">import</span> <span class="n">csv</span>
+<span class="n">import</span> <span class="n">sys</span>
+<span class="n">from</span> <span class="n">tweepy</span> <span class="n">import</span> <span class="no">OAuthHandler</span>
+
+<span class="n">consumer_key</span> <span class="o">=</span> <span class="s1">'YOUR_CONSUMER_KEY'</span>
+<span class="n">consumer_secret</span> <span class="o">=</span> <span class="s1">'YOUR_CONSUMER_SECRET'</span>
+<span class="n">access_token</span> <span class="o">=</span> <span class="s1">'YOUR_ACCESS_TOKEN'</span>
+<span class="n">access_secret</span> <span class="o">=</span> <span class="s1">'YOUR_ACCESS_SECRET'</span>
+
+<span class="k">def</span> <span class="nf">process_or_store</span><span class="p">(</span><span class="n">tweet</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">tweet</span><span class="p">)</span>
+
+<span class="n">auth</span> <span class="o">=</span> <span class="no">OAuthHandler</span><span class="p">(</span><span class="n">consumer_key</span><span class="p">,</span> <span class="n">consumer_secret</span><span class="p">)</span>
+<span class="n">auth</span><span class="p">.</span><span class="nf">set_access_token</span><span class="p">(</span><span class="n">access_token</span><span class="p">,</span> <span class="n">access_secret</span><span class="p">)</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="no">API</span><span class="p">(</span><span class="n">auth</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="nf">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">'wt'</span><span class="p">)</span>
+<span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="p">.</span><span class="nf">writer</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">status</span> <span class="k">in</span> <span class="n">tweepy</span><span class="o">.</span><span class="no">Cursor</span><span class="p">(</span><span class="n">api</span><span class="p">.</span><span class="nf">search</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="s1">'#jokes'</span><span class="p">,</span><span class="n">lang</span><span class="o">=</span><span class="s2">"en"</span><span class="p">).</span><span class="nf">items</span><span class="p">(</span><span class="mi">400</span><span class="p">):</span>
+        <span class="n">writer</span><span class="p">.</span><span class="nf">writerow</span><span class="p">([</span><span class="n">status</span><span class="p">.</span><span class="nf">text</span><span class="p">.</span><span class="nf">encode</span><span class="p">(</span><span class="s2">"utf-8"</span><span class="p">)])</span></code></pre></figure>
+

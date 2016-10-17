@@ -1,0 +1,74 @@
+<p>Setup a Remote connection to Raspberry Pi like this:</p>
+
+<ol>
+  <li>Connect your Raspberry Pi to a HDMI monitor. Make sure you have a keyboard and a mouse. Make sure it is able to connect to the internet using a Wifi.</li>
+  <li>Install Weaved for Raspberry Pi. Weaved is a service software freely downloadable for Pi. https://www.weaved.com. Create a user id and password with Weaved.</li>
+  <li>Open a terminal and type these:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">weavedconnectd</span>
+<span class="n">sudo</span> <span class="n">weavedinstaller</span></code></pre></figure>
+
+<ol>
+  <li>It will ask you stuff like this:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">1</span><span class="p">)</span> <span class="no">Sign</span> <span class="k">in</span> <span class="n">to</span> <span class="n">your</span> <span class="n">existing</span> <span class="n">remot3</span><span class="p">.</span><span class="nf">it</span> <span class="n">account</span>
+<span class="mi">2</span><span class="p">)</span> <span class="no">Request</span> <span class="n">a</span> <span class="n">code</span> <span class="k">for</span> <span class="n">a</span> <span class="kp">new</span> <span class="n">remot3</span><span class="p">.</span><span class="nf">it</span> <span class="n">account</span>
+<span class="mi">3</span><span class="p">)</span> <span class="no">Enter</span> <span class="n">a</span> <span class="n">verification</span> <span class="n">code</span> <span class="n">received</span> <span class="k">in</span> <span class="n">e</span><span class="o">-</span><span class="n">mail</span>
+<span class="mi">4</span><span class="p">)</span> <span class="no">Exit</span></code></pre></figure>
+
+<ol>
+  <li>Select 1 and sign in to your account. It will prompt for user name and password.</li>
+  <li>Once you login it will ask you options to install SSH,VNC or the Web interface.</li>
+  <li>Here is an SSH example:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">1</span><span class="p">)</span> <span class="no">Attach</span><span class="o">/</span><span class="n">reinstall</span> <span class="n">remot3</span><span class="p">.</span><span class="nf">it</span> <span class="n">to</span> <span class="n">a</span> <span class="no">Service</span></code></pre></figure>
+
+<ol>
+  <li>It will throw a Protocol Selection Menu like this</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">1</span><span class="p">)</span> <span class="no">SSH</span> <span class="n">on</span> <span class="n">port</span> <span class="mi">22</span></code></pre></figure>
+
+<ol>
+  <li>
+    <p>It will configure SSH on port 22. You can select another port if you want to. You can select a name say “eagles”</p>
+  </li>
+  <li>
+    <p>Now check if your SSH service is up</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">netstat</span> <span class="o">-</span><span class="n">apn</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">w</span> <span class="n">tcp</span> <span class="o">|</span> <span class="n">grep</span> <span class="no">LISTEN</span></code></pre></figure>
+
+<ol>
+  <li>
+    <p>Now open a terminal in <em>another laptop or desktop</em> and login to your weaved account over the web. Weaved will show you the SSH connection named “eagles” in their web interface. Just click on it.</p>
+  </li>
+  <li>
+    <p>Here is an image of how it shows up.</p>
+  </li>
+</ol>
+<div>
+<img display="block" margin="auto" src="/assets/eagles.jpg" height="250" width="400" />
+</div>
+
+<ol>
+  <li>Connect from your laptop through SSH into the pi. When prompted give the pi password:
+<br /></li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">ssh</span> <span class="o">-</span><span class="n">l</span> <span class="n">pi</span> <span class="n">proxy13</span><span class="p">.</span><span class="nf">yoics</span><span class="p">.</span><span class="nf">net</span> <span class="o">-</span><span class="nb">p</span> <span class="mi">37955</span>
+<span class="n">pi</span><span class="vi">@proxy13</span><span class="p">.</span><span class="nf">yoics</span><span class="p">.</span><span class="nf">net</span><span class="err">'</span><span class="n">s</span> <span class="ss">password: 
+
+</span><span class="no">The</span> <span class="n">programs</span> <span class="n">included</span> <span class="n">with</span> <span class="n">the</span> <span class="no">Debian</span> <span class="no">GNU</span><span class="o">/</span><span class="no">Linux</span> <span class="nb">system</span> <span class="n">are</span> <span class="n">free</span> <span class="n">software</span><span class="p">;</span>
+<span class="n">the</span> <span class="n">exact</span> <span class="n">distribution</span> <span class="n">terms</span> <span class="k">for</span> <span class="n">each</span> <span class="n">program</span> <span class="n">are</span> <span class="n">described</span> <span class="k">in</span> <span class="n">the</span>
+<span class="n">individual</span> <span class="n">files</span> <span class="k">in</span> <span class="sr">/usr/s</span><span class="n">hare</span><span class="o">/</span><span class="n">doc</span><span class="o">/*</span><span class="sr">/copyright.
+
+Debian GNU/</span><span class="no">Linux</span> <span class="n">comes</span> <span class="n">with</span> <span class="no">ABSOLUTELY</span> <span class="no">NO</span> <span class="no">WARRANTY</span><span class="p">,</span> <span class="n">to</span> <span class="n">the</span> <span class="n">extent</span>
+<span class="n">permitted</span> <span class="n">by</span> <span class="n">applicable</span> <span class="n">law</span><span class="o">.</span>
+<span class="no">Last</span> <span class="ss">login: </span><span class="no">Sun</span> <span class="no">Oct</span> <span class="mi">16</span> <span class="mi">23</span><span class="p">:</span><span class="mi">59</span><span class="p">:</span><span class="mi">57</span> <span class="mi">2016</span> <span class="n">from</span> <span class="n">localhost</span>
+<span class="n">pi</span><span class="vi">@raspberrypi</span><span class="ss">:~</span> <span class="err">$</span> </code></pre></figure>
+
