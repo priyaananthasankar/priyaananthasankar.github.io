@@ -16,6 +16,6 @@ It sure is a negative sentiment but people say "Wow" and "Yeah right" about some
 5. We ran machine learning algorithms like Maximum Entropy, Reverse Polarity, KNN, Naive Bayes, Perceptron, Support Vector Machine.
 6. Average Accuracy = 65%, Baseline = 50% - Not bad huh?
 
-Here is the link: https://github.com/priyaananthasankar/sarcasm_detector
+Code: [Sarcasm Detection Techniques](https://github.com/priyaananthasankar/sarcasm_detector)
 
 Enjoy.
