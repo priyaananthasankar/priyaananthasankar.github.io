@@ -14,7 +14,7 @@ It sure is a negative sentiment but people say "Wow" and "Yeah right" about some
 3. We calculated the Fleiss Kappa metric for the annotation which told us how much we (as annotators) agree on sarcasm for each tweet.
 4. We cleaned the tweets
 5. We ran machine learning algorithms like Maximum Entropy, Reverse Polarity, KNN, Naive Bayes, Perceptron, Support Vector Machine.
-6. Average Accuracy = 65%, Baseline = 50% - Not bad huh?
+6. Average Accuracy = 65%, Baseline = 50% - Not bad huh? Working to improve this model.
 
 Code: [Sarcasm Detection Techniques](https://github.com/priyaananthasankar/sarcasm_detector)
 
